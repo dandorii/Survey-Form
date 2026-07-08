@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Cybersecurity Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for your time for choosing cybersecurity course, kindly answer this survey form to improve cybersecurity curriculum
+        </p>
+        </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+         <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Year Level</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current year level</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Cybersecurity as a Course</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite feature of Cybersecurity Course?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Hacking</option>
+            <option value="projects">Coding</option>
+            <option value="community">Operating System Fundamental</option>
+            <option value="openSource">Problem Solving</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved in this Course?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="hacking-course"
+              type="checkbox"
+              class="input-checkbox"
+            />Hacking Course</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="programming-course"
+              type="checkbox"
+              class="input-checkbox"
+            />Programming Course</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="networking"
+              type="checkbox"
+              class="input-checkbox"
+            />Networking</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Challenges</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Open Source Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="input-checkbox"
+            />Forum</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"23aab9bc39df417f841cda8fdd25ebd0","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+  </body>
+</html>
